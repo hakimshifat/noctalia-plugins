@@ -4,7 +4,7 @@
 ## A Noctalia launcher provider for quickly switching between Obsidian vaults.
 
 ### Preview:
-
+![preview](recording.gif)
 ## Features
 
 - Browse and open all your Obsidian vaults from the Noctalia launcher
