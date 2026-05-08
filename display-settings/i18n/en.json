@@ -32,7 +32,8 @@
     "on": "On",
     "off": "Off",
     "statusOff": "(off)",
-    "statusDisabled": "(disabled)"
+    "statusDisabled": "(disabled)",
+    "refreshRateSuffix": "@ %1 Hz"
   },
   "settings": {
     "niriConfigPath": {

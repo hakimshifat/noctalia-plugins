@@ -20,7 +20,7 @@ Rectangle {
     ? Qt.rgba(Color.mPrimary.r, Color.mPrimary.g, Color.mPrimary.b, 0.18)
     : hovered ? Color.mSurface : "transparent"
   border.color: active ? Color.mPrimary : Color.mOutline
-  border.width: 1
+  border.width: Style.borderS
   Behavior on color { ColorAnimation { duration: 100 } }
 
   NText {

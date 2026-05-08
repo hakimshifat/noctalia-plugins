@@ -26,10 +26,10 @@ Item {
   readonly property var transforms: ["normal", "90", "180", "270", "flipped", "flipped-90", "flipped-180", "flipped-270"]
 
   readonly property string subtitleText: {
-    if (loading) return pluginApi?.tr("panel.loading") || ""
+    if (loading) return pluginApi?.tr("panel.loading")
     var count = liveOutputs.length
-    if (count === 1) return pluginApi?.tr("panel.singleOutput") || ""
-    return pluginApi?.tr("panel.outputCount", { count: count }) || ""
+    if (count === 1) return pluginApi?.tr("panel.singleOutput")
+    return pluginApi?.tr("panel.outputCount", { count: count })
   }
 
   onVisibleChanged: {
@@ -57,7 +57,7 @@ Item {
 
         ColumnLayout {
           Layout.fillWidth: true
-          spacing: 2
+          spacing: Style.marginXXS
 
           NText {
             text: pluginApi?.tr("panel.title")

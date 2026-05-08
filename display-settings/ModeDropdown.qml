@@ -32,7 +32,7 @@ ColumnLayout {
     radius: Style.radiusS
     color: hovered ? Color.mSurface : "transparent"
     border.color: Color.mOutline
-    border.width: 1
+    border.width: Style.borderS
 
     RowLayout {
       anchors { fill: parent; leftMargin: Style.marginS; rightMargin: Style.marginS }
@@ -97,7 +97,7 @@ ColumnLayout {
             font.weight: row.isCurrent ? 600 : 400
           }
           NText {
-            text: "@ " + parseFloat(row.mode.refreshRate).toFixed(1) + " Hz"
+            text: root.pluginApi?.tr("panel.refreshRateSuffix").arg(parseFloat(row.mode.refreshRate).toFixed(1))
             pointSize: Style.fontSizeXS
             color: Color.mOnSurfaceVariant
           }

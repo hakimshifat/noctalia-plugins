@@ -24,7 +24,7 @@ OutputCard {
 
   outputName: output.name
   isDisabled: !output.enabled
-  disabledText: pluginApi?.tr("panel.statusOff") || ""
+  disabledText: pluginApi?.tr("panel.statusOff")
   contentSpacing: Style.marginS
 
   ModeDropdown {
@@ -69,7 +69,7 @@ OutputCard {
       }
 
       PillButton {
-        label: root.pluginApi?.tr("panel.auto") || ""
+        label: root.pluginApi?.tr("panel.auto")
         enabled: !root.modifying
         onActivated: root.autoScaleRequested()
       }
@@ -120,8 +120,8 @@ OutputCard {
 
         PillButton {
           label: root.output.vrrEnabled
-            ? (root.pluginApi?.tr("panel.on") || "")
-            : (root.pluginApi?.tr("panel.off") || "")
+            ? root.pluginApi?.tr("panel.on")
+            : root.pluginApi?.tr("panel.off")
           active: root.output.vrrEnabled
           enabled: !root.modifying && root.output.vrrSupported
           opacity: root.output.vrrSupported ? 1.0 : 0.4
@@ -148,8 +148,8 @@ OutputCard {
 
       PillButton {
         label: root.output.enabled
-          ? (root.pluginApi?.tr("panel.turnOff") || "")
-          : (root.pluginApi?.tr("panel.turnOn") || "")
+          ? root.pluginApi?.tr("panel.turnOff")
+          : root.pluginApi?.tr("panel.turnOn")
         enabled: !root.modifying
         onActivated: root.powerToggleRequested()
       }

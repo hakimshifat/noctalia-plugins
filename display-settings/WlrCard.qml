@@ -9,7 +9,7 @@ OutputCard {
 
   outputName: output.name
   isDisabled: output.enabled === "no"
-  disabledText: pluginApi?.tr("panel.statusDisabled") || ""
+  disabledText: pluginApi?.tr("panel.statusDisabled")
 
   Repeater {
     model: root.buildProperties()
@@ -34,7 +34,7 @@ OutputCard {
   }
 
   function push(props, key, value) {
-    props.push({ label: pluginApi?.tr(key) || "", value: value })
+    props.push({ label: pluginApi?.tr(key), value: value })
   }
 
   function formatTransform(t) {
