@@ -60,8 +60,7 @@ Item {
         running: false
         stdout: StdioCollector {
             onStreamFinished: {
-                if (text)
-                    root.parseSessionContent(text);
+                root.parseSessionContent(text || "");
                 root.ready = true;
             }
         }
