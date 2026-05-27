@@ -1,0 +1,44 @@
+{
+  "plugin": {
+    "name": "Wallhaven"
+  },
+  "widget": {
+    "tooltip": "Wallhaven Wallpapers"
+  },
+  "settings": {
+    "downloadDir": {
+      "label": "Download Directory",
+      "desc": "Where to save downloaded wallpapers (e.g., ~/Pictures/Wallpapers)",
+      "placeholder": "~/Pictures/Wallpapers"
+    },
+    "searchQuery": {
+      "label": "Default Search Query",
+      "desc": "Leave empty for latest wallpapers",
+      "placeholder": "anime, nature, etc."
+    },
+    "apiKey": {
+      "label": "API Key (Optional)",
+      "desc": "Required for NSFW searches or higher rate limits",
+      "placeholder": "Your API Key"
+    },
+    "purity": {
+      "label": "Purity",
+      "desc": "Choose which Wallhaven purity categories to search.",
+      "sfw": "SFW",
+      "sketchy": "SFW + Sketchy",
+      "all": "All (requires API key)"
+    }
+  },
+  "panel": {
+    "title": "Wallhaven",
+    "loading": "Loading wallpapers...",
+    "empty": "No wallpapers found",
+    "apiKeyRequired": "An API key is required for NSFW searches",
+    "downloaded": "Downloaded to {path}",
+    "busy": "Download already in progress",
+    "loadError": "Error loading wallpapers",
+    "downloadError": "Error downloading image",
+    "refresh": "Refresh",
+    "loadMore": "Load More"
+  }
+}

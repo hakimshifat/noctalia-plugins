@@ -1,0 +1,28 @@
+{
+  "id": "wallhaven",
+  "name": "Wallhaven",
+  "version": "1.0.0",
+  "minNoctaliaVersion": "4.6.6",
+  "author": "Abdul Hakim Shifat",
+  "license": "MIT",
+  "repository": "https://github.com/noctalia-dev/noctalia-plugins",
+  "description": "Browse, search, and download wallpapers from Wallhaven.",
+  "tags": ["Panel", "Theming", "Utility"],
+  "entryPoints": {
+    "main": "Main.qml",
+    "controlCenterWidget": "ControlCenterWidget.qml",
+    "panel": "Panel.qml",
+    "settings": "Settings.qml"
+  },
+  "dependencies": {
+    "plugins": []
+  },
+  "metadata": {
+    "defaultSettings": {
+      "downloadDir": "~/Pictures/Wallpapers",
+      "searchQuery": "",
+      "apiKey": "",
+      "purity": "100"
+    }
+  }
+}
